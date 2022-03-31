@@ -11,7 +11,7 @@ function App() {
     axios
       //pls work man
       .get(
-        'https://frozen-beach-85070.herokuapp.com/https://scoresaber.com/api/players?countries=SE'
+        'https://radiant-atoll-76238.herokuapp.com/https://scoresaber.com/api/players?countries=SE'
       )
       .then((res) => {
         setPlayer(res.data['players']);
