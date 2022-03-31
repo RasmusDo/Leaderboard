@@ -11,8 +11,8 @@ const Player = ({ name, flag, profilePicture, countryRank, pp }) => {
           <p className="flag">{flag}</p>
         </div>
         <div className="player-info">
-          <p className="player-rank">#{countryRank}</p>
           <p className="player-pp">{pp}</p>
+          <p className="player-rank">{countryRank}</p>
         </div>
       </div>
     </div>

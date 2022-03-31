@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="user-app">
       <div className="user-search">
-        <h1 className="user-text">Search for a user!</h1>
+        <h1 className="user-text">Search for a gamer!</h1>
         <form>
           <input
             type="text"
@@ -46,8 +46,8 @@ function App() {
             key={player.id}
             name={player.name}
             profilePicture={player.profilePicture}
-            flag={player.flag}
             countryRank={player.countryRank}
+            pp={player.pp}
           />
         );
       })}
