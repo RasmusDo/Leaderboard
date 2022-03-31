@@ -9,6 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
+      //pls work man
       .get(
         'https://frozen-beach-85070.herokuapp.com/https://scoresaber.com/api/players?countries=SE'
       )
