@@ -9,9 +9,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://scoresaber.com/api/players?countries=SE', {
-        headers: { 'Access-Control-Allow-Origin': '*' },
-      })
+      .get(
+        'https://frozen-beach-85070.herokuapp.com/https://scoresaber.com/api/players?countries=SE'
+      )
       .then((res) => {
         setPlayer(res.data['players']);
       })
