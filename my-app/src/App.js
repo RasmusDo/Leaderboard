@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     axios
       .get('https://scoresaber.com/api/players?countries=SE', {
-        headers: { 'X-Access-Control-Allow-Origin	': 'https://scoresaber.com' },
+        headers: { 'X-Access-Control-Allow-Origin	': '*' },
       })
       .then((res) => {
         setPlayer(res.data['players']);
