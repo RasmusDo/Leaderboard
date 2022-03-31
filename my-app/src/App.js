@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Player from '/Users/ploxan/react-lostark/src/Players.js';
+import Player from './Players';
 
 function App() {
   const [player, setPlayer] = useState([]);
