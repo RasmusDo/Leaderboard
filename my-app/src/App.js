@@ -48,6 +48,7 @@ function App() {
             profilePicture={player.profilePicture}
             countryRank={player.countryRank}
             pp={player.pp}
+            rankChange={player.histories.split(',')}
           />
         );
       })}
