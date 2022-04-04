@@ -19,6 +19,8 @@ const Player = ({
           <p className="flag">{flag}</p>
         </div>
         <div className="player-info">
+          <p className="player-pp">{pp + 'pp'}</p>
+
           {rankChange[rankChange.length - 1] >
           rankChange[rankChange.length - 2] ? (
             <p className="player-rating red">
@@ -31,7 +33,6 @@ const Player = ({
               {rankChange[rankChange.length - 2]}
             </p>
           )}
-          <p className="player-pp">{pp + 'pp'}</p>
           <p className="player-rank">{countryRank}</p>
         </div>
       </div>

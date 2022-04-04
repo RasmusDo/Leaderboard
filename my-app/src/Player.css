@@ -6,7 +6,7 @@
 .player-row {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 80px;
   border-bottom: 1px solid #d7d7d7;
@@ -30,10 +30,6 @@
   height: 30px;
   width: 30px;
   margin-right: 10px;
-}
-
-.coin-symbol {
-  text-transform: uppercase;
 }
 
 .player-info {
