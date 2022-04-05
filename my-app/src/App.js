@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Player from './Players';
+import './Player.css';
+
 import { AiOutlineRise } from 'react-icons/ai';
 
 function App() {
@@ -49,9 +51,8 @@ function App() {
           </div>
           <div className="player-info">
             <p className="player-pp">PP</p>
-            <p className="player-rating"></p>
+            <p className="player-rating">Global Rank Change</p>
 
-            <p className="player-rating green">Global Rank</p>
             <p className="player-rank">Rank SE</p>
           </div>
         </div>
@@ -65,6 +66,7 @@ function App() {
             profilePicture={player.profilePicture}
             countryRank={player.countryRank}
             pp={player.pp}
+            rank={player.rank}
             rankChange={player.histories.split(',')}
           />
         );

@@ -9,6 +9,7 @@ const Player = ({
   countryRank,
   pp,
   rankChange,
+  rank,
 }) => {
   return (
     <div className="player-container">
@@ -21,18 +22,18 @@ const Player = ({
         <div className="player-info">
           <p className="player-pp">{pp + 'pp'}</p>
 
-          {rankChange[rankChange.length - 1] >
-          rankChange[rankChange.length - 2] ? (
-            <p className="player-rating red">
-              <AiOutlineFall />
-              {rankChange[rankChange.length - 1]}
-            </p>
-          ) : (
-            <p className="player-rating green">
-              <AiOutlineRise />
-              {rankChange[rankChange.length - 2]}
-            </p>
-          )}
+          {(() => {
+            const walla = rankChange[0] - rank;
+            if (walla > 9999) return <p className="player-rating green">∞</p>;
+            if (rankChange[0] < rank)
+              return (
+                <p className="player-rating red">{rankChange[0] - rank}</p>
+              );
+            if (rankChange[0] > rank);
+            return (
+              <p className="player-rating green">{rankChange[0] - rank}</p>
+            );
+          })()}
           <p className="player-rank">{countryRank}</p>
         </div>
       </div>

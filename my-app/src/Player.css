@@ -34,16 +34,23 @@
 
 .player-info {
   display: flex;
-  text-align: right;
+
   justify-content: space-between;
   width: 100%;
 }
 
 .player-rank {
   width: 110px;
+  float: right;
 }
 
+.player-pp {
+  float: right;
+  width: 100px;
+}
 .player-rating {
+  float: right;
+
   width: 100px;
 }
 
