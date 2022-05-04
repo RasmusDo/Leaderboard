@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="user-app">
       <div className="user-search">
-        <h1 className="user-text">Search for a gamer!</h1>
+        <h1 className="user-text">Search for a player!</h1>
         <form>
           <input
             type="text"
