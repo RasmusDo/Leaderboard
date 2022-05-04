@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/poggers/static/css/main.ed071164.css",
-    "main.js": "/poggers/static/js/main.311a52ee.js",
-    "index.html": "/poggers/index.html",
-    "main.ed071164.css.map": "/poggers/static/css/main.ed071164.css.map",
-    "main.311a52ee.js.map": "/poggers/static/js/main.311a52ee.js.map"
+    "main.css": "/Leaderboard/static/css/main.ed071164.css",
+    "main.js": "/Leaderboard/static/js/main.311a52ee.js",
+    "index.html": "/Leaderboard/index.html",
+    "main.ed071164.css.map": "/Leaderboard/static/css/main.ed071164.css.map",
+    "main.311a52ee.js.map": "/Leaderboard/static/js/main.311a52ee.js.map"
   },
   "entrypoints": [
     "static/css/main.ed071164.css",
