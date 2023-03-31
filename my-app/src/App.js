@@ -13,9 +13,9 @@ function App() {
 
   useEffect(() => {
     axios
-      //pls work man https://scoresaber.com/api/players?page=2&countries=SE
+      //pls work man https://radiant-atoll-76238.herokuapp.com/ https://scoresaber.com/api/players?page=2&countries=SE
       .get(
-        'https://radiant-atoll-76238.herokuapp.com/https://scoresaber.com/api/players?countries=SE'
+        'https://scoresaber.com/api/players?countries=SE'
       )
       .then((res) => {
         setPlayer(res.data['players']);
